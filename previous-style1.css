@@ -1,0 +1,409 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("img/bg_summer.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+/*.container{
+	position: center;
+}*/
+.container{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	border: 1px solid blue;	
+}
+.contentarea {
+        background-image: url("img/contentarea.png");
+
+        width: 100%;
+        height: 100%;
+	
+        background-position: 360px 25px;
+	/*background-position: 0 0 ;*/
+	/*background-position: 65% 25px;*/
+        background-repeat: no-repeat;
+        background-size: 730px /*55%*/;
+	/*position: absolute;*/
+}
+
+/* For original, long side bar - not being used right now */
+.sidebar {
+	background-image: url("img/sidebar2.png");
+
+	width: 100%;
+	height: 100%;
+	background-position: 190px 40px;
+	background-repeat: no-repeat;
+	background-size: 200px;
+	
+}
+
+.top-sidebar {
+        background-image: url("img/top-sidebar.png");
+
+        width: 100%;
+        height: 100%;
+        background-position: 190px -10px;
+	/*background-position: 17.5% -10px;*/
+        background-repeat: no-repeat;
+        background-size: 200px;
+
+}
+
+.bottom-sidebar {
+        background-image: url("img/bottom-sidebar.png");
+
+        width: 100%;
+        height: 100%;
+        background-position: 198px 318px;
+        background-repeat: no-repeat;
+        background-size: 192px 260px;
+
+}
+
+.logo-button {
+	 position: absolute;
+	 background-image: url("img/wtp-logo.png"); 
+         
+	 top: 23px;
+	 left: 221px;
+         width: 145px; 
+         height: 95px; 
+         font-size: 2rem;
+	 
+	 border: none;
+	 outline: none;
+	 
+	 cursor: pointer;
+	 
+	 background-color: Transparent;
+	 background-size: 145px 95px;
+	 background-repeat: no-repeat;
+}
+
+.play-sidebar {
+         position: absolute;
+         background-image: url("img/play.png");
+
+         top: 118px;
+         left: 223px;
+
+	 /* Button size */
+         width: 135px;
+         height: 63px;
+
+         border: none;
+         outline: none;
+
+         cursor: pointer;
+
+         background-color: Transparent;
+        
+	 /* Image size */
+	 background-size: 100%;
+         
+	 background-repeat: no-repeat;
+}
+
+.sidenav {
+	width: 110px;
+	position: absolute;
+	z-index: 1;
+	top: 206px;
+ 	left: 232px;
+	background: none;
+	overflow-x: hidden;
+	padding: 8px 0;
+}
+
+.sidenav a {
+	text-align: center;
+	padding: 0px 2px 12px 16px;
+ 	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: Verdana;
+	color: #d9ffb3;
+	display: block;
+}
+
+
+.play-button {
+         position: absolute;
+         background-image: url("img/play.png");
+
+         top: 360px;
+         left: 662px;
+
+         /* Button size */
+         width: 135px;
+         height: 63px;
+
+         border: none;
+         outline: none;
+
+         cursor: pointer;
+
+         background-color: Transparent;
+
+         /* Image size */
+         background-size: 100%;
+
+         background-repeat: no-repeat;
+}
+
+.link1 {
+  	 position: absolute;
+         background-image: url("img/navbutton0.png");
+
+         top: 465px;
+         left: 405px;
+
+         /* Button size */
+         width: 135px;
+         height: 100px;
+
+         border: none;
+         outline: none;
+
+         cursor: pointer;
+
+         background-color: Transparent;
+
+         /* Image size */
+         background-size: 100%;
+         background-repeat: no-repeat;
+
+	 /* Text styling */
+	 padding-top: 65px;
+	 padding-right: 38px;
+	 font-family: Geneva;
+	 font-weight: bold;
+	 color: white;
+}
+
+.link2 {
+         position: absolute;
+         background-image: url("img/navbutton1.png");
+
+         top: 465px;
+         left: 545px;
+
+         /* Button size */
+         width: 123px;
+         height: 95px;
+
+         border: none;
+         outline: none;
+
+         cursor: pointer;
+
+         background-color: Transparent;
+
+         /* Image size */
+         background-size: 100%;
+         background-repeat: no-repeat;
+
+         /* Text styling */
+         padding-top: 70px;
+         padding-right: 70px;
+         font-family: Geneva;
+         font-weight: bold;
+         color: white;
+}
+
+.link3 {
+         position: absolute;
+         background-image: url("img/navbutton2.png");
+
+         top: 465px;
+         left: 671px;
+
+         /* Button size */
+         width: 131px;
+         height: 100px;
+
+         border: none;
+         outline: none;
+
+         cursor: pointer;
+
+         background-color: Transparent;
+
+         /* Image size */
+         background-size: 100%;
+         background-repeat: no-repeat;
+
+         /* Text styling */
+         padding-top: 64px;
+         padding-right: 51px;
+         font-family: Geneva;
+         font-weight: bold;
+         color: white;
+}
+
+.link4 {
+         position: absolute;
+         background-image: url("img/navbutton3.png");
+
+         top: 465px;
+         left: 809px;
+
+         /* Button size */
+         width: 122px;
+         height: 95px;
+
+         border: none;
+         outline: none;
+
+         cursor: pointer;
+
+         background-color: Transparent;
+
+         /* Image size */
+         background-size: 100%;
+         background-repeat: no-repeat;
+
+         /* Text styling */
+         padding-top: 68px;
+         padding-right: 15px;
+         font-family: Geneva;
+         font-weight: bold;
+         color: white;
+}
+
+.link5 {
+         position: absolute;
+         background-image: url("img/navbutton3.png");
+
+         top: 465px;
+         left: 943px;
+
+         /* Button size */
+         width: 122px;
+         height: 95px;
+
+         border: none;
+         outline: none;
+
+         cursor: pointer;
+
+         background-color: Transparent;
+
+         /* Image size */
+         background-size: 100%;
+         background-repeat: no-repeat;
+
+         /* Text styling */
+         padding-top: 68px;
+         padding-right: 75px;
+         font-family: Geneva;
+         font-weight: bold;
+         color: white;
+}
+
+
+.welcome {
+        position: absolute;
+        top: -4px;
+        right: 300px;
+        background-color: #2D2D4A;
+        opacity: 0.5;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        border: 1px solid #1F1F32;
+        padding: 4px 14px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+}
+
+.login-button {
+	position: absolute;
+	top: -4px;
+	right: 220px;
+	background-color: #2D2D4A;
+	opacity: 0.5;
+  	border: none;
+	border-radius: 4px;
+  	color: white;
+	border: 1px solid #1F1F32;
+  	padding: 4px 14px;
+  	text-align: center;
+  	text-decoration: underline;
+  	display: inline-block;
+  	font-size: 14px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+}
+
+.login-content-area {
+	position: absolute;
+	background-image: url("img/bottom-sidebar.png");
+
+        width: 100%;
+        height: 100%;
+        background-position: 500px 100px;
+        background-repeat: no-repeat;
+        background-size: 400px 300px;
+
+}
+
+.login-form {
+	position: absolute;
+	top: 100px;
+	left: 550px;
+}
+
+h2 {
+        font-family: Gabriola;
+        font-size: 30px;
+        color: white;
+}
+
+input[type=text] {
+	width: 270px;
+	padding: 10px 16px;
+	border: 1px solid #ccc;
+	border-radius:4px;
+}
+
+input[type=password] {
+        width: 270px;
+        padding: 10px 16px;
+        border: 1px solid #ccc;
+        border-radius:4px;
+}
+
+
+input[type=submit] {
+	width: 303px;
+	background-color: green;
+	color: white;
+	padding: 12px 18px;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.error-msg{
+	font-family: arial;
+}

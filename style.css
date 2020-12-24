@@ -1,0 +1,854 @@
+/* Retina display styles/media queries at end of file */
+
+html {
+  height: 100%;
+  margin: 0;
+  width: 960px;
+  padding: 0;
+ /*overflow-y: auto;*/
+  /*overflow: scroll;*/
+}
+
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /*overflow-y: auto;*/
+
+}
+
+#page{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 0;
+		background-color: green;
+		background-image: url("img/bg_spring_w_fg.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		--web-view-name: Web 1280 – 1;
+                --web-view-id: Web_1280__1;
+                --web-scale-on-resize: true;
+                --web-enable-deep-linking: true;
+		overflow-x: scroll;
+		overflow-y: scroll;
+	}
+
+	.container{
+		position: relative;
+		height: 98%;
+		width: 990px;
+		display: inline-block;
+		border: 0px solid black;
+	}
+
+	.bottom-sidebar{
+		position: absolute;
+		border: 0px solid blue;
+		top: 330px;
+		left: 20px;
+		width: 167px;
+		height: 240px;
+		text-align: center;
+	}
+	.fairy-img{
+		padding-top: 7px;
+		height: 180px;
+		border-radius: 20px;
+	}
+	.fairy-name{
+		font-family: "Mulish", sans-serif;
+		font-size: 14px;
+		color: white;
+	}
+	.fairy-edit-icon{
+                position: absolute;
+                background-image: url("img/edit-icon.png");
+                background-size: cover;
+                background-color: transparent;
+                border: none;
+                right: 5px;
+                top: 5px;
+                width: 22px;
+                height: 22px;
+                z-index: 3;
+                cursor: pointer;
+        }
+	.open-button {
+  background-color: transparent;
+  color: white;
+  /*padding: 16px 20px;*/
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  position: absolute;
+  bottom: 215px;
+  left: 140px;
+  width: 20px;
+  height: 20px;
+  background-image: url("img/edit-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 230px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container input[type=text], .form-container input[type=password] {
+  width: 85%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+	.bottom-nav-wrapper{
+		position: relative;
+		padding-bottom: 0px;
+		padding-top: 480px;
+		padding-left: 70px;
+
+		margin: 0 auto;
+    		display: grid;
+    		width: 60%;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    		border: 0px solid blue;
+    		text-align: center;
+
+	}
+	.nav-button-wrapper{
+		position: relative;
+		width: 130px;
+		height: 100px;
+
+    		padding-right: 20px;
+    		display: inline-block;
+	}
+	.overlay {
+		position: absolute;
+  		bottom: 5px;
+  		left: 3px;
+  		height: 91px;
+  		width: 122px;
+  		border-radius: 5px;
+  		opacity: 0;
+  		transition: .6s ease;
+  		background-color: #0C5400;
+	}
+	.nav-button-wrapper:hover .overlay{
+		opacity: .85;
+	}
+	.nav-img{
+		width: 130px;
+	}
+	.nav-text{
+		position: absolute;
+		color: white;
+		bottom: 4px;
+
+		padding-left: 10px;
+		/*font-family: Geneva;*/
+		font-family: "Mulish", sans-serif;
+		font-size: 14px;
+	        /*font-weight: bold;*/
+
+	}
+	.hover-nav-text{
+		position: absolute;
+                color: white;
+                bottom: 35px;
+
+		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+		width: 100%;
+                font-family: "Mulish", sans-serif;
+		font-size: 17px;
+	}
+	/** About page **/
+	.content-wrapper{
+                position: absolute;
+                width: 770px;
+                height: 535px;
+                right: 0;
+                top: 10px;
+		border: 0px solid black;
+        }
+	.contentarea-wrapper{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 90px;
+		border: 0px solid blue;
+		background-image: url("img/contentarea-about.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.about-text{
+		position: absolute;
+		color: white;
+		font-size: 16px;
+		font-family: "Mulish", sans-serif;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	.edit-form{
+		margin-top: 10px;
+		text-align: center;
+	}
+	.edit-icon{
+		position: absolute;
+		background-image: url("img/edit-icon.png");
+		background-size: cover;
+		background-color: transparent;
+		border: none;
+		right: 25px;
+		top: 20px;
+		width: 22px;
+		height: 22px;
+		z-index: 3;
+		cursor: pointer;
+	}
+	::-webkit-scrollbar {
+	        width: 0px;
+    		background: transparent;  /* Optional: just make scrollbar invisible */
+	}
+
+	.about-text-content{
+		border:0px;
+		overflow-y: scroll;
+		height: 405px;
+	}
+
+	/** End of about page styles **/
+	.contentarea{
+		position: absolute;
+		width: 810px;
+		height: 450px;
+		right: 0px;
+		top: 30px;
+		overflow: visible;
+	}
+	.sidebar{
+		position: absolute;
+		width: 200px;
+		left: 0px;
+		top: 2px;
+		overflow: visible;
+	}
+
+	.wtp-logo{
+		position: absolute;
+		width: 145px;
+		height: 95px;
+		top: 32px;
+		left: 32px;
+		cursor: pointer;
+	}
+	.play-btn-content{
+		position: absolute;
+		width: 130px;
+		height: 62px;
+		left: 512px;
+		top: 380px;
+		cursor: pointer;
+	}
+	.play-btn-sidebar{
+		position: absolute;
+		width: 130px;
+		height: 62px;
+		left: 35px;
+		top: 128px;
+		cursor: pointer;
+	}
+	.sidenav{
+		width: 120px;
+		position: absolute;
+		z-index: 1;
+		top: 198px;
+ 		left: 45px;
+		background: none;
+		overflow-x: hidden;
+		padding: 8px 0;
+		text-align: center;
+		border: 0px solid blue;
+	}
+	.sidenav a{
+		text-align: center;
+		display: block;
+                margin-left: auto;
+                margin-right: auto;
+                /*width: auto;*/
+		padding-top: 11px;
+		/*padding: 0px 2px 12px 16px;*/
+ 		text-decoration: none;
+		font-size: 12px;
+		font-weight: bold;
+		font-family: 'Mulish';
+		letter-spacing: .5px;
+		color: #d9ffb3;
+		display: block;
+	}
+	.sidenav a:hover:after {
+    		content: "";
+    		display: block; /* This will put the pseudo element on its own line. */
+    		margin: 0 auto; /* This will center the border. */
+    		width: 25%; /* Change this to whatever width you want. */
+    		padding-top: 0px; /* This creates some space between the element and the border. */
+    		border-bottom: 2px solid #d9ffb3;
+	}
+	.sidenav a:hover{
+		/*text-decoration: underline;*/
+		font-weight: bold;
+	}
+	/* effect-shine */
+	.effect-shine:hover {
+                -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 40%, #000 50%, rgba(0,0,0,.6) 70%);
+                -webkit-mask-size: 200%;
+                animation: shine 1.5s infinite;
+        }
+
+	a.effect-shine:hover {
+  		-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 40%, #000 50%, rgba(0,0,0,.6) 70%);
+  		-webkit-mask-size: 200%;
+  		animation: shine 1.5s infinite;
+	}
+
+	@-webkit-keyframes shine {
+  		from {
+    			-webkit-mask-position: 150%;
+  		}
+
+  		to {
+    			-webkit-mask-position: -50%;
+  		}
+  	}
+
+	.link-position{
+		top: 480px;
+		margin-left: 15px;
+	}
+
+.welcome {
+        position: absolute;
+        top: -4px;
+        right: 78px;
+        background-color: #2D2D4A;
+        opacity: 0.5;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        border: 1px solid #1F1F32;
+        padding: 4px 14px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+}
+
+.login-button {
+	position: absolute;
+	top: -4px;
+	right: 0px;
+	background-color: #2D2D4A;
+	opacity: 0.5;
+  	border: none;
+	border-radius: 4px;
+  	color: white;
+	border: 1px solid #1F1F32;
+  	padding: 4px 14px;
+  	text-align: center;
+  	text-decoration: underline;
+  	display: inline-block;
+  	font-size: 14px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+}
+
+.login-content-area {
+	position: absolute;
+	background-image: url("img/bottom-sidebar.png");
+
+        width: 100%;
+        height: 100%;
+        background-position: 300px 100px;
+        background-repeat: no-repeat;
+        background-size: 400px 300px;
+
+}
+
+.login-form {
+	position: absolute;
+	top: 100px;
+	left: 350px;
+}
+
+h2 {
+        font-family: "Gabriola", "Playball";
+        font-size: 30px;
+        color: white;
+}
+h3{
+	font-family: "Brush Script MT";
+	font-size: 40px;
+	color: #f4ffa1;
+	-webkit-text-stroke: .1px black;
+}
+.title{
+	position: absolute;
+	top: -40px;
+	left: 200px;
+}
+h4{
+	font-family: "Brush Script MT";
+	font-size: 30px;
+	color: white;
+}
+.subtitle{
+	position: absolute;
+	top: -12px;
+	left: 430px;
+}
+
+input[type=text] {
+	width: 270px;
+	padding: 10px 16px;
+	border: 1px solid #ccc;
+	border-radius:4px;
+}
+
+input[type=password] {
+        width: 270px;
+        padding: 10px 16px;
+        border: 1px solid #ccc;
+        border-radius:4px;
+}
+
+.submit{
+	width: 303px;
+        background-color: green;
+        color: white;
+        padding: 12px 18px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
+input[type=submit] {
+	/*width: 303px;
+	background-color: green;
+	color: white;
+	padding: 12px 18px;
+	border: none;
+	outline: none;
+	border-radius: 4px;*/
+	cursor: pointer;
+}
+.show-onclick{
+	display: none;
+}
+.error-msg{
+	font-family: "Mulish", sans-serif;
+	color: white;
+}
+
+/* CONTACTS PAGE STYLES */
+.contentarea-contact-wrapper{
+             position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 90px;
+                border: 0px solid blue;
+                background-image: url("img/contact-content-area.png");
+                opacity: .9;
+		border-radius: 20px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+		border: 5px solid green;
+        }
+.contacts-wrapper{
+	padding-top: 70px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+	width: 80%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	border: 0px solid black;
+	text-align: center;
+}
+.contact-wrapper{
+	padding-left: 2px;
+	padding-right: 2px;
+	display: inline-block;
+	margin: 0 auto;
+}
+.contact-title{
+	margin-top: 50px;
+	font-family: "Gabriola", "Playball";
+	letter-spacing: 0px;
+	color: #363636;
+	/*color: green;*/
+	font-size: 75px;
+	font-weight: bold;
+	line-height: 70px;
+}
+.contact-subtitle{
+	font-family: "Mulish", sans-serif;
+	color: #363636;
+	font-size: 18px;
+	padding-top: 25px;
+}
+.contact-wrapper{
+	text-align: center;
+}
+.icon-wrapper{
+	width: 80px;
+	height: 80px;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: .5s ease-in-out;
+	display: inline-block;
+}
+.discord{
+	background-image: url("img/discord-logo.png");
+}
+.discord:hover{
+        background-image: url("img/discord-logo-gray.png");
+}
+.instagram{
+	background-image: url("img/instagram-logo.png");
+}
+.instagram:hover{
+	background-image: url("img/instragram-logo-gray.png");
+	opacity: .9;
+	transition: .5s ease-in-out;
+}
+.facebook{
+        background-image: url("img/facebook-logo.png");
+}
+.facebook:hover{
+        background-image: url("img/facebook-logo-gray.png");
+}
+.tumblr{
+        background-image: url("img/tumblr-logo.png");
+}
+.tumblr:hover{
+        background-image: url("img/tumblr-logo-gray.png");
+}
+.email{
+        background-image: url("img/email-logo.png");
+}
+.email:hover{
+        background-image: url("img/email-logo-gray.png");
+}
+
+
+.icon-subtitle{
+	font-family: "Mulish", sans-serif;
+	color: #363636;
+	display: inline-block;
+	padding-top: 10px;
+	margin: 0 auto;
+}
+
+/* END OF CONTACTS PAGE STYLES */
+
+
+/** For retina display **/
+	@media (-webkit-min-device-pixel-ratio: 2){
+		.container{
+                	position: relative;
+                	height: 98%;
+                	width: 1110px;
+                	display: inline-block;
+                	border: 0px solid black;
+       		}
+       		.sidebar{
+                        position: absolute;
+                        width: 240px;
+                        left: 0px;
+                        top: 2px;
+                        overflow: visible;
+			border: 0px solid blue;
+                }
+		.contentarea{
+			position: absolute;
+                	width: 890px;
+                	height: 550px;
+                	right: 0px;
+                	top: 30px;
+                	overflow: visible;
+		}
+
+
+	}
+	@media (-webkit-min-device-pixel-ratio: 2){
+	.container .title{
+			position: absolute;
+        		top: -40px;
+        		left: 220px;
+		}
+		.container .wtp-logo{
+			position: absolute;
+			width: 170px;
+			height: 115px;
+			top: 40px;
+			left: 40px;
+			cursor: pointer;
+		}
+		.container .play-btn-sidebar{
+	                position: absolute;
+                	width: 150px;
+                	height: 68px;
+                	left: 48px;
+                	top: 155px;
+                	cursor: pointer;
+        	}
+		.container .play-btn-content{
+                	position: absolute;
+                	width: 150px;
+                	height: 68px;
+                	left: 590px;
+               		top: 460px;
+        	        cursor: pointer;
+	        }
+
+
+        	.container .sidenav{
+               		width: 140px;
+                	position: absolute;
+                	z-index: 1;
+                	top: 245px;
+                	left: 48px;
+                	background: none;
+                	overflow-x: hidden;
+                	padding: 16px 0;
+        	}
+        	.container .sidenav a {
+                	text-align: center;
+                	padding: 0px 2px 12px 16px;
+                	text-decoration: none;
+                	font-size: 14px;
+                	font-weight: bold;
+                	font-family: 'Mulish', sans-serif;
+                	color: #d9ffb3;
+                	display: block;
+       		}
+		.container .link-position{
+			top: 585px;
+			margin-left: 10px;
+		}
+		        .bottom-sidebar{
+                position: absolute;
+                border: 0px solid blue;
+                top: 400px;
+                left: 30px;
+                width: 185px;
+                height: 270px;
+                text-align: center;
+        }
+        .fairy-img{
+                padding-top: 7px;
+                height: 220px;
+                border-radius: 20px;
+        }
+        .fairy-name{
+                font-family: "Mulish", sans-serif;
+                font-size: 16px;
+                color: white;
+        }
+
+	.open-button {
+  		bottom: 245px;
+  		left: 165px;
+	}
+
+	.bottom-nav-wrapper{
+                position: relative;
+                padding-bottom: 0px;
+                padding-top: 580px;
+                padding-left: 100px;
+
+                margin: 0 auto;
+                display: grid;
+                width: 60%;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+                border: 0px solid blue;
+                text-align: center;
+
+        }
+        .nav-button-wrapper{
+                position: relative;
+                width: 145px;
+                height: 110px;
+
+                padding-right: 20px;
+                display: inline-block;
+        }
+	.nav-img{
+                width: 145px;
+        }
+	.overlay {
+                position: absolute;
+                bottom: 3px;
+                left: 5px;
+                height: 102px;
+                width: 136px;
+                border-radius: 5px;
+                opacity: 0;
+                transition: .6s ease;
+                background-color: #0C5400;
+        }
+        .nav-button-wrapper:hover .overlay{
+                opacity: .85;
+        }
+
+        .nav-text{
+                position: absolute;
+                color: white;
+                bottom: 4px;
+
+                padding-left: 10px;
+                /*font-family: Geneva;*/
+                font-family: "Mulish", sans-serif;
+                font-size: 14px;
+                /*font-weight: bold;*/
+
+        }
+        .hover-nav-text{
+                position: absolute;
+                color: white;
+                bottom: 35px;
+
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                font-family: "Mulish", sans-serif;
+                font-size: 17px;
+        }
+
+		.contact-title{
+			padding-top: 60px;
+
+		}
+		/** Login page **/
+		.container .login-content-area {
+			position: absolute;
+			background-image: url("img/bottom-sidebar.png");
+        		width: 100%;
+        		height: 100%;
+        		background-position: 300px 100px;
+    		    	background-repeat: no-repeat;
+        		background-size: 500px 350px;
+		}
+
+		.container .login-form {
+			position: absolute;
+			top: 130px;
+			left: 400px;
+		}
+		/** End of login page **/
+
+		/** About page **/
+		.container .content-wrapper{
+                	position: absolute;
+               	 	width: 850px;
+                	height: 655px;
+                	right: 0;
+                	top: 20px;
+                	border: 0px solid black;
+        	}
+		.about-text-content{
+        	        border:0px;
+               		overflow-y: scroll;
+                	height: 525px;
+	        }
+
+
+		/** End of about page **/
+
+	}
+	/** End of retina display styles **/
+#toplogin {
+	right: 0;
+	background: rgba(25, 25, 25, .5);
+	font-size: 100%;
+	margin-right: 0px;
+	color: white;
+	z-index: 5;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 3px;
+	border-radius: 5px;
+	position: absolute;
+}
+#toplogin a:link, #toplogin a:visited, #toplogin a:hover {
+	color: white;
+	text-decoration: underline;
+}
+.titlebackground {
+	height: 83.2px;
+	width: 324.4px;
+	left: 19%;
+	top: -0.5%;
+	position: absolute;
+}
+
+	/** End of retina display styles **/
