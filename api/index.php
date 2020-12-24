@@ -9,37 +9,26 @@
 		$username = $_SESSION["username"];
 	}
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- HI -->
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<script type="text/javascript" src="scripts/includeItems.js"></script>
-
 	<link rel="icon" type="image/png" href="img/favicon-blue.ico"/>
 	<title>We The Pixies</title>
 </head>
 	<body>
 		<div id="page">
 			<div class="container">
-				<!-- Include on all pages -->
                                 <div w3-include-html="loginButtons.php"></div>
-
-
-				<!-- MIDDLE CONTENT AREA -->
 				<img draggable="false" class="contentarea" src="img/contentarea1.png">
 				<img class="titlebackground" src="img/header.png">
 				<h3 class="title stroke">Pixie Hollow World</h3>
 				<h4 class="subtitle">rewrite</h4>
 				<img class="play-btn-content effect-shine" draggable="false" onclick="window.location.href='//wethepixies.net'" src="img/play.png">
-				<!-- END OF CONTENT AREA -->
 				<div w3-include-html="nav.php"></div>
-
-                                <!-- Changing featured fairy -->
                                 <?php
                                         if(isset($_POST["submit"])){
                                                 if(!empty($_POST["link"])){
@@ -52,11 +41,6 @@
                                                 }
                                         }
                                 ?>
-
-
-				<!-- END OF SIDEBAR -->
-
-				<!-- BOTTOM BAR LINKS -->
 				<div class="bottom-nav-wrapper">
 					<a href='news.php'>
 						<div class="nav-button-wrapper">
@@ -64,7 +48,6 @@
 							<div class="nav-text">
                                                                         News & Events
                                                         </div>
-
 							<div class="overlay">
 								<div class="hover-nav-text">
 									News & Events
@@ -97,7 +80,6 @@
                                                                         Contact Us
                                                                 </div>
                                                         </div>
-
 						</div>
                                         </a>
 					<a href='apply.php'>
@@ -111,7 +93,6 @@
                                                                         Apply for Staff
                                                                 </div>
                                                         </div>
-
 						</div>
                                         </a>
 					<a href='faq.php'>
@@ -125,23 +106,11 @@
                                                                         FAQ
                                                                 </div>
                                                         </div>
-
 						</div>
                                         </a>
-
 				</div>
-<!--
-				<button class="link1 link-position" onclick="window.location.href='news.php'" type="submit">News/Events</button>
-				<button class="link2 link-position" onclick="window.location.href='about.php'" type="submit">About</button>
-				<button class="link3 link-position" onclick="window.location.href='contact.php'" type="submit">Contacts</button>
-				<button class="link4 link-position" onclick="window.location.href='apply.php'" type="submit">Apply For Staff</button>
-				<button class="link5 link-position" onclick="window.location.href='faq.php'" type="submit">FAQ</button>
--->
-				<!-- END OF BOTTOM BAR LINKS -->
 				<img class="play-btn-content" draggable="false"  onclick="window.open('//wethepixies.net')" src="img/play.png">
-
 			</div>
-
 		</div>
 		<script>
 			includeHTML();
